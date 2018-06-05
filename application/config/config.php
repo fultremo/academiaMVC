@@ -24,7 +24,7 @@ if (ENVIRONMENT == 'development' || ENVIRONMENT == 'dev') {
  *
  * URL_PUBLIC_FOLDER:
  * The folder that is visible to public, users will only have access to that folder so nobody can have a look into
- * "/application" or other folder inside your application or call any other .php file than index.php inside "/public".
+ * "/application" or other folder inside your application or call any other .php file than dashboard.php inside "/public".
  *
  * URL_PROTOCOL:
  * The protocol. Don't change unless you know exactly what you do. This defines the protocol part of the URL, in older

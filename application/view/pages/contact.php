@@ -38,11 +38,31 @@
             <div class="col-md-6">
                 <div class="contact-form">
                     <h4>Enviar un mensaje</h4>
-                    <form>
-                        <input class="input" type="text" name="name" placeholder="Nombre">
-                        <input class="input" type="email" name="email" placeholder="Email">
-                        <input class="input" type="text" name="subject" placeholder="Asunto">
-                        <textarea class="input" name="message" placeholder="Escribe tu mensaje"></textarea>
+                    <?php $this->insert('partials/feedback') ?><br>
+                    <form action="<?php echo URL; ?>contacts/sendmessage" method="POST">
+                        <input class="input" type="text" name="first_name"
+                               value="<?= (isset($datos['first_name'])) ?
+                                   $datos['first_name'] :
+                                   "" ?>" placeholder="Nombre">
+                        <input class="input" type="text" name="last_name"
+                               value="<?= (isset($datos['last_name'])) ?
+                                   $datos['last_name'] :
+                                   "" ?>" placeholder="Apellidos">
+                        <input class="input" type="email" name="email"
+                               value="<?= (isset($datos['email'])) ?
+                                   $datos['email'] :
+                                   "" ?>"
+                               placeholder="Email">
+                        <input class="input" type="text" name="subject"
+                               value="<?= (isset($datos['subject'])) ?
+                                   $datos['subject'] :
+                                   "" ?>"
+                               placeholder="Asunto">
+                        <textarea class="input" name="message" placeholder="Escribe tu mensaje">
+                            <?= (isset($datos['message'])) ?
+                                $datos['message'] :
+                                "" ?>
+                        </textarea>
                         <button class="main-button icon-button pull-right">Enviar Mensaje</button>
                     </form>
                 </div>

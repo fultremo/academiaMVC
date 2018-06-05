@@ -17,7 +17,7 @@ class Auth
             Sesion::init();
             echo $_SERVER['REQUEST_URI'];
             Sesion::set('origen', $_SERVER['REQUEST_URI']);
-            header('location:<?php echo URL; ?>login');
+            header('location: /academia/login');
             exit();
         }
     }

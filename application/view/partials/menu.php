@@ -5,7 +5,7 @@
         <ul class="main-menu nav navbar-nav navbar-right">
             <li><a href="<?php echo URL; ?>">Home</a></li>
             <li><a href="<?php echo URL; ?>posts/todos">Posts</a></li>
-            <li><a href="<?php echo URL; ?>privado">Zona privada</a></li>
+            <li><a href="<?php echo URL; ?>admin/dashboard">Zona privada</a></li>
             <li><a href="<?php echo URL; ?>pages/courses">Cursos</a></li>
             <li><a href="<?php echo URL; ?>pages/about">About</a></li>
             <li><a href="<?php echo URL; ?>pages/contact">Contacto</a></li>
@@ -16,7 +16,7 @@
     <ul class="main-menu nav navbar-nav navbar-right">
         <li><a href="<?php echo URL; ?>">Home</a></li>
         <li><a href="<?php echo URL; ?>posts/todos">Posts</a></li>
-        <li><a href="<?php echo URL; ?>privado">Zona privada</a></li>
+        <li><a href="<?php echo URL; ?>admin/dashboard">Zona privada</a></li>
         <li><a href="<?php echo URL; ?>pages/courses">Cursos</a></li>
         <li><a href="<?php echo URL; ?>pages/about">About</a></li>
         <li><a href="<?php echo URL; ?>pages/contact">Contacto</a></li>

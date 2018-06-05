@@ -71,7 +71,6 @@
             <?php //$this->mostrar_error_campo("clave2", $errores) ?>
         </p>
         <p>
-            <!--<input type="submit" name="iniciar" value="Enviar"></input>-->
             <button class="main-button icon-button pull-right">Enviar</button>
         </p>
     </form>
